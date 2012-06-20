@@ -50,7 +50,7 @@ for w,bc in apcount.items():
   if frac>0.1 and frac<0.5:
     wordlist.append(w)
 
-out=file('blogdata1.txt','w')
+out=file('blogdata.txt','w')
 out.write('Blog')
 for word in wordlist: out.write('\t%s' % word)
 out.write('\n')
