@@ -8,7 +8,7 @@
         window.addEventListener("load", Ready);
 
         function Ready(){
-            if(window.File && window.FileReader){ //These are the relevant HTML5 objects that we are going to use
+            if(window.File && window.FileReader && window.FileList && window.Blob){ //These are the relevant HTML5 objects that we are going to use
                 document.getElementById('UploadButton').addEventListener('click', StartUpload);
                 document.getElementById('FileBox').addEventListener('change', FileChosen);
             }
